@@ -1,0 +1,20 @@
+{
+  "name": "coffeescript-node",
+  "version": "1.0.0",
+  "description": "coffeescript",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "keywords": [
+    "coffeescript",
+    "javascript",
+    "node"
+  ],
+  "author": "Ethan J",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "coffee": "^5.5.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
