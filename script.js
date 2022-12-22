@@ -12,7 +12,7 @@ Just your typical morning before work, gotta grab your only source of energy, co
 
 I only wrote this in Coffeescript for the punchline.
 */
-var coffee, decaf, espresso, exit, hell, milk, nope, nothing, prompt, soda, water;
+var apple, coffee, decaf, espresso, exit, hell, milk, nope, nothing, orange, prompt, soda, water;
 
 // mornin, pick a drink
 prompt = require("prompt-sync")();
@@ -21,7 +21,7 @@ prompt = require("prompt-sync")();
 espresso = prompt("What coffee? ");
 
 coffee = function() {
-  console.log("Pouring a cup of", espresso, "...");
+  console.log(`Pouring a cup of ${espresso}...`);
   return console.log("Done!");
 };
 
@@ -37,7 +37,7 @@ decaf = function() {
   return decaf = prompt("Did you? ");
 };
 
-if (espresso !== "espresso" && espresso !== "piss" && espresso !== "pee") {
+if (espresso !== "espresso" && espresso !== "piss" && espresso !== "pee" && espresso !== "milk" && espresso !== "oj" && espresso !== "orange juice" && espresso !== "apple juice") {
   decaf();
 }
 
@@ -77,6 +77,24 @@ if (espresso === "milk") {
   milk();
 }
 
+// secret ending 5
+orange = function() {
+  return console.log("Oh, orange juice. Now I just need to make some eggs. Oh shoot, I'm gonna be late!");
+};
+
+if (espresso === "oj" || espresso === "orange juice") {
+  orange();
+}
+
+// secret ending 6
+apple = function() {
+  return console.log("Mmmm, apple juice...");
+};
+
+if (espresso === "apple juice") {
+  apple();
+}
+
 // nothing?
 nothing = function() {
   return console.log("What am I going to drink now?");
@@ -94,7 +112,8 @@ if (decaf === "Yes." || decaf === "yes" || decaf === "yes." || decaf === "Yes" |
 nope = function() {
   console.log("Really?");
   console.log("So you gave me", espresso, "?");
-  return console.log("ok, then");
+  console.log("ok, then");
+  return console.log("I'll just have some π.");
 };
 
 if (decaf === "No." || decaf === "no" || decaf === "no." || decaf === "No") {
