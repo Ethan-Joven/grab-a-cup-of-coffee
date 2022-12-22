@@ -1865,3 +1865,4 @@ node_modules/.bin/detect-libc.ps1
 node_modules/.bin/jsesc
 script-macos
 script-linux
+script-win.exe
